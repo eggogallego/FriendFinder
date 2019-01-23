@@ -16,7 +16,7 @@ let friends = [
         ]
     },
     {
-        name: "Superman,
+        name: "Superman",
         photo: "https://upload.wikimedia.orhttps://assets1.ignimgs.com/2018/12/06/doomsdayclock-hub-marquee-alt-59e142e49a5cd583051384-2-1544066647257_1280w.jpgg/wikipedia/en/thumb/9/97/Doc_Brown.JPG/220px-Doc_Brown.JPG",
         scores: [
             5,
