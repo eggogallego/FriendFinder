@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+</head>
+
+<style>
+    body {
+        background-image: url(https://nerdist.com/wp-content/uploads/2017/11/justice-league-sublime99.jpg)
+    }
+    .container {
+        background-color: #bebfc7;
+        padding-top: 15px;
+    }
+    .jumbotron {
+        background-color: #868dd8 !important;
+    }
+    img {
+        display: block;
+        margin: auto;
+        width: 416px;
+        height: 416px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center"></span> Super Hero "Friend" Finder </span></h1>
+            <h2 class="text-center">Compatibility-based "friend" finding application -- basically a dating app with a
+                superhero theme</h2>
+            <br>
+            <div class="text-center">
+                <a href="/home"><button class="btn btn-lg btn-danger"><span class="fa fa-list-alt"></span> Home</button></a>
+                <a href="/survey"><button class="btn btn-lg btn-danger"><span class="fa fa-credit-card"></span> Take
+                        the
+                        Survey</button></a>
+            </div>
+        </div>
+        <h2 class="text-center"><u>Survey Questions</u></h2>
+        <h3><strong>About You</strong></h3>
+        <h4>Name (Required)</h4>
+        <input type="text" id="name" class="form-control" required>
+        <h4>Link to Photo Image (Required)</h4>
+        <input type="text" id="photo" class="form-control" required>
+        <hr>
+        <h3><strong>Question 1</strong></h3>
+        <h4>You always choose to help a friend in need, no matter what.</h4>
+        <select class="chosen-select" id="q1">
+            <option value=""></option>
+            <option value="1">1 (Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Agree)</option>
+        </select>
+        <h3><strong>Question 2</strong></h3>
+        <h4>If you see someone stealing, you will call them out right away.</h4>
+        <select class="chosen-select" id="q2">
+            <option value=""></option>
+            <option value="1">1 (Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Agree)</option>
+        </select>
+        <h3><strong>Question 3</strong></h3>
+        <h4>You like the idea of wearing a cape.</h4>
+        <select class="chosen-select" id="q3">
+            <option value=""></option>
+            <option value="1">1 (Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Agree)</option>
+        </select>
+        <h3><strong>Question 4</strong></h3>
+        <h4>You believe that people are generally good at heart.</h4>
+        <select class="chosen-select" id="q4">
+            <option value=""></option>
+            <option value="1">1 (Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Agree)</option>
+        </select>
+        <h3><strong>Question 5</strong></h3>
+        <h4>You hate wasting time.</h4>
+        <select class="chosen-select" id="q5">
+            <option value=""></option>
+            <option value="1">1 (Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Agree)</option>
+        </select>
+        <h3><strong>Question 6</strong></h3>
+        <h4>You judge others based on their actions, not words.</h4>
+        <select class="chosen-select" id="q6">
+            <option value=""></option>
+            <option value="1">1 (Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Agree)</option>
+        </select>
+        <h3><strong>Question 7</strong></h3>
+        <h4>In a team game, you think yourself to be a team player.</h4>
+        <select class="chosen-select" id="q7">
+            <option value=""></option>
+            <option value="1">1 (Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Agree)</option>
+        </select>
+        <h3><strong>Question 8</strong></h3>
+        <h4>You are a little more priveleged than most but you don't let that define you.</h4>
+        <select class="chosen-select" id="q8">
+            <option value=""></option>
+            <option value="1">1 (Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Agree)</option>
+        </select>
+        <h3><strong>Question 9</strong></h3>
+        <h4>You support the idea that world peace can be achieved.</h4>
+        <select class="chosen-select" id="q9">
+            <option value=""></option>
+            <option value="1">1 (Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Agree)</option>
+        </select>
+        <h3><strong>Question 10</strong></h3>
+        <h4>You consider yourself someone who enjoys time alone, away from most social gatherings.</h4>
+        <select class="chosen-select" id="q10">
+            <option value=""></option>
+            <option value="1">1 (Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Agree)</option>
+        </select>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-danger btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
+                aria-hidden="true"></i>
+            Submit</button>
+        <hr>
+    </div>
+    <!--modal-->
+    <div id="results-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!--modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title text-center"><strong>Your Match!</strong></h2>
+                </div>
+                <div class="modal-body">
+                    <h2 id="match-name" class="text-center"></h2>
+                    <img id="match-img" src="" alt="userPhoto">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        //chosen css
+        let config = {
+            ".chosen-select": {},
+            ".chosen-select-deselect": {
+                allow_single_deselect: true
+            },
+            ".chosen-select-no-single": {
+                disable_search_threshold: 10
+            },
+            ".chosen-select-no-results": {
+                no_results_text: "Oops, nothing found!"
+            },
+            ".chosen-select-width": {
+                width: "95%"
+            }
+        };
+        for (let selector in config) {
+            $(selector).chosen(config[selector]);
+        }
+        //form inputs
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+            //form validation
+            function validateForm() {
+                let isValid = true;
+                $(".form-control").each(function () {
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+                $(".chosen-select").each(function () {
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+                return isValid;
+            }
+            if (validateForm()) {
+                let userData = {
+                    name: $("#name").val(),
+                    photo: $("#photo").val(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+                };
+                $.post("/api/friends", userData, function (data) {
+                    $("#match-name").text(data.name);
+                    $("#match-img").attr("src", data.photo);
+                    $("#results-modal").modal("toggle");
+                });
+            } else {
+                alert("Please fill out all fields before submitting!");
+            }
+        });
+    </script>
+</body>
+
+</html>
